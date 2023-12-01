@@ -20,7 +20,7 @@ def get_out_text(text):
 	from transformers import pipeline
 
 	pipe = pipeline("text-generation", model="HuggingFaceH4/zephyr-7b-beta")
-	final_out = str(pipeline(text)))
+	final_out = str(pipeline(text))
 
 	return final_out
 
