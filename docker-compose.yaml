@@ -1,0 +1,7 @@
+version: "3.2"
+services:
+  https-portal:
+    container_name: "zephyr-7b-beta"
+    build: .
+    ports:
+      - '3330:3330'
