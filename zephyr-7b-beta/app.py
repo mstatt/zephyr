@@ -18,14 +18,15 @@ def get_out_text(text):
 # Load model directly
 	# Use a pipeline as a high-level helper
 	from transformers import pipeline
-
+	print(text)
 	pipe = pipeline("text-generation", model="HuggingFaceH4/zephyr-7b-beta")
 	final_out = str(pipeline(text))
+	print(final_out)
 
 	return final_out
 
 
-@app.route('/', methods=['POST','GET'])
+@app.route('/', methods=['POST'])
 def get_text():
     srcData = str(request.get_data())
     fm_out = get_out_text(srcData)
