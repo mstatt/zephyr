@@ -20,9 +20,9 @@ def get_out_text(text):
 	from transformers import pipeline
 
 	pipe = pipeline("text-generation", model="HuggingFaceH4/zephyr-7b-beta")
-		final_out = str(pipeline(sent)))
+	final_out = str(pipeline(text)))
 
-		return final_out
+	return final_out
 
 
 @app.route('/', methods=['POST','GET'])
