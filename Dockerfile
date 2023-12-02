@@ -1,4 +1,5 @@
-FROM nvidia/cuda:10.2-cudnn8-runtime-ubuntu18.04
+# syntax=docker/dockerfile:1
+FROM nvidia/cuda
 
 # RUN apt-key del 7fa2af80
 RUN apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/3bf863cc.pub
