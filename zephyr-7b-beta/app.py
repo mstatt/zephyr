@@ -42,4 +42,4 @@ def get_text():
 
 if __name__ == '__main__':
     # run app in debug mode on port 3330
-    app.run(debug=False, port=3330)
+    app.run(debug=True, port=3330)
