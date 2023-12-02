@@ -7,6 +7,7 @@ COPY . .
 RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt
 RUN export FLASK_APP=app.py
+RUN export FLASK_ENV=development
 #set work directory
 WORKDIR /zephyr-7b-beta
 EXPOSE 3330
