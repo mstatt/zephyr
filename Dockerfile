@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM dustynv/l4t-ml:r35.2.1
+FROM nvidia/cuda:11.0.3-base-ubuntu20.04 nvidia-smi
 
 COPY requirements.txt requirements.txt
 COPY . .
