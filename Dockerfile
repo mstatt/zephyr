@@ -1,8 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM nvidia/cuda:11.0-base
-
-# RUN apt-key del 7fa2af80
-RUN apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/3bf863cc.pub
+FROM dustynv/l4t-ml:r35.2.1
 
 COPY requirements.txt requirements.txt
 COPY . .
