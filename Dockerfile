@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM nvidia/cuda:11.0.3-base-ubuntu20.04
+FROM anibali/pytorch:2.0.0-cuda11.8
 
 COPY requirements.txt requirements.txt
 COPY . .
