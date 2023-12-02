@@ -24,7 +24,7 @@ def get_out_text(text):
 		#top_k=0,  # select from top 0 tokens (because zero, relies on top_p)
 		max_new_tokens=1024,  # mex number of tokens to generate in the output
 		repetition_penalty=1.1,
-		, device=0)
+		device=0)
 	final_out = str(pipe(text))
 	print(final_out)
 
