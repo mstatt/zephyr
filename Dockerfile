@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM pytorch/pytorch:latest
+FROM nvidia/cuda
 
 COPY requirements.txt requirements.txt
 COPY . .
